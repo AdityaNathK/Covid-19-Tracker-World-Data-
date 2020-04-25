@@ -14,36 +14,36 @@ class InfoPanel extends StatelessWidget {
     return Container(
       child: Column(
         children: <Widget>[
-          GestureDetector(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => InfoScreen()));
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5),
-                color: kTitleTextColor,
-              ),
-              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Text(
-                    'INFORMATION',
-                    style: kHeadingTextStyle.copyWith(color: kBackgroundColor),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: kBackgroundColor,
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
+//          GestureDetector(
+//            onTap: () {
+//              Navigator.push(context,
+//                  MaterialPageRoute(builder: (context) => InfoScreen()));
+//            },
+//            child: Container(
+//              decoration: BoxDecoration(
+//                borderRadius: BorderRadius.circular(5),
+//                color: kTitleTextColor,
+//              ),
+//              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+//              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+//              child: Row(
+//                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                children: <Widget>[
+//                  Text(
+//                    'INFORMATION',
+//                    style: kHeadingTextStyle.copyWith(color: kBackgroundColor),
+//                  ),
+//                  Padding(
+//                    padding: const EdgeInsets.symmetric(horizontal: 20),
+//                    child: Icon(
+//                      Icons.arrow_forward,
+//                      color: kBackgroundColor,
+//                    ),
+//                  )
+//                ],
+//              ),
+//            ),
+//          ),
           GestureDetector(
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: ((context)=> FAQPage())));

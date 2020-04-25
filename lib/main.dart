@@ -12,10 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Covid 19 Tracker Global',
       theme: ThemeData(
-          scaffoldBackgroundColor: kBackgroundColor,
-          textTheme: TextTheme(
-            body1: TextStyle(color: kBodyTextColor),
-          )),
+          primaryColor: kBackgroundColor,
+        brightness: Brightness.light
+      ),
       home: HomeScreen(),
     );
   }
