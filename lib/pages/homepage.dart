@@ -141,7 +141,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         worldData: worldData,
                       ),
                   ),
-              PieChartPanel(worldData: worldData),
+              worldData == null
+                  ? CircularProgressIndicator()
+                  : PieChartPanel(worldData: worldData),
               Padding(
                 padding: const EdgeInsets.only(
                     left: 10, top: 20, right: 10, bottom: 5),

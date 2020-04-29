@@ -48,7 +48,7 @@ class WorldPanel extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(right: 20, top: 10),
               alignment: Alignment.centerRight,
-              child: Text('*Total effected countries '+worldData['affectedCountries'].toString(),style: kDataTextStyle.copyWith(fontWeight: FontWeight.w600)))
+              child: Text('* TOTAL IMPACTED COUNTRIES: '+worldData['affectedCountries'].toString(),style: kUnderDataTextStyle.copyWith(fontWeight: FontWeight.w500)))
         ],
       ),
 

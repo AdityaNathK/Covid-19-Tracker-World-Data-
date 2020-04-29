@@ -24,6 +24,7 @@ const kHeadingTextStyle = TextStyle(
 
 const kSubTextStyle = TextStyle(fontSize: 16, color: kTextLightColor);
 const kDataTextStyle = TextStyle(fontSize: 16);
+const kUnderDataTextStyle = TextStyle(fontSize: 14);
 const kHeadTextStyle = TextStyle(fontSize: 16, fontWeight:FontWeight.bold);
 const kDateTextStyle = TextStyle(fontSize: 12, color: kBackgroundColor);
 const kTitleTextStyle = TextStyle(
