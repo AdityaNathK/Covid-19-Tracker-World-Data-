@@ -1,10 +1,12 @@
 import 'dart:convert';
 import 'package:gruharaksha/data/constant.dart';
 import 'package:gruharaksha/pages/countryPage.dart';
+import 'package:gruharaksha/pages/settings.dart';
 import 'package:gruharaksha/pages/worldpanel.dart';
 import 'package:gruharaksha/panels/infopanel.dart';
 import 'package:gruharaksha/panels/mosteffected.dart';
 import 'package:gruharaksha/panels/pie_chart_panel.dart';
+import 'package:gruharaksha/translation/global_translation.dart';
 import 'package:gruharaksha/widgets/my_header.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -83,7 +85,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         elevation: 0,
         centerTitle: true,
-        title: Text('COVID-19 TRACKER',style: kAppBarTextStyle.copyWith(color: kBackgroundColor),),
+        title: Text(translations.text('pageNames.home'),style: kAppBarTextStyle.copyWith(color: kBackgroundColor),),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>SettingsPage()));
+            },
+          )
+        ],
       ),
       body: RefreshIndicator(
         onRefresh: fetchData,
