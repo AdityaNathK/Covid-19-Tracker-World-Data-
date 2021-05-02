@@ -1,4 +1,4 @@
-//** COMMIT MESSAGE : Started implementing Localization**/
+//** COMMIT MESSAGE : Localization Implementation Success Proceeding Further**/
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,24 +7,6 @@ import 'package:gruharaksha/translation/bloc/translation_bloc.dart';
 import 'package:gruharaksha/translation/global_translation.dart';
 import 'data/constant.dart';
 
-//void main() => runApp(MyApp());
-//
-//class MyApp extends StatelessWidget {
-//  // This widget is the root of your application.
-//  @override
-//  Widget build(BuildContext context) {
-//    return MaterialApp(
-//      debugShowCheckedModeBanner: false,
-//      title: 'Covid 19 Tracker Global',
-//      theme: ThemeData(
-//          primaryColor: kBackgroundColor,
-//        brightness: Brightness.light
-//      ),
-//      home: HomeScreen(),
-//    );
-//  }
-//}
-//
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
